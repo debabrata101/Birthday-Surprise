@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&family=Great+Vibes&display=swap");
+
+@import "tailwindcss";
+
+:root {
+  font-family: "DM Sans", sans-serif;
+  color: #5b2941;
+  background: #fff1f6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-width: 320px;
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  overflow-x: hidden;
+  background: #fff1f6;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.font-serif {
+  font-family: "Playfair Display", serif;
+}
+
+.script-font {
+  font-family: "Great Vibes", cursive;
+}
+
+::selection {
+  background: #ffd0df;
+  color: #70263f;
+}
+
+/* =========================================
+   MOBILE SCREEN FIT
+========================================= */
+
+@media (max-width: 640px) {
+  .screen-fit {
+    height: 100svh;
+    min-height: 100svh;
+    overflow: hidden;
+  }
+}
+
+/* =========================================
+   TABLET / DESKTOP SCREEN FIT
+========================================= */
+
+@media (min-width: 641px) {
+  .screen-fit {
+    min-height: 100vh;
+    height: 100vh;
+    overflow: hidden;
+  }
+}

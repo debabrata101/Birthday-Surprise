@@ -1,0 +1,1340 @@
+/* =====================================================
+   CAKE SCENE
+===================================================== */
+
+.birthday-cake-scene {
+  position: relative;
+  width: 360px;
+  height: 430px;
+  margin: auto;
+  perspective: 900px;
+}
+
+
+/* =====================================================
+   SOFT GLOW
+===================================================== */
+
+.cake-glow {
+  position: absolute;
+
+  left: 50%;
+  top: 50%;
+
+  width: 300px;
+  height: 300px;
+
+  transform: translate(-50%, -50%);
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(255, 210, 225, 0.6) 0%,
+      rgba(255, 210, 225, 0.25) 40%,
+      transparent 72%
+    );
+
+  filter: blur(18px);
+
+  animation: cakeGlow 4s ease-in-out infinite;
+
+  pointer-events: none;
+}
+
+@keyframes cakeGlow {
+
+  0%,
+  100% {
+    transform:
+      translate(-50%, -50%)
+      scale(1);
+
+    opacity: 0.65;
+  }
+
+  50% {
+    transform:
+      translate(-50%, -50%)
+      scale(1.15);
+
+    opacity: 1;
+  }
+}
+
+
+/* =====================================================
+   PLATE
+===================================================== */
+
+.cake-plate {
+  position: absolute;
+
+  left: 50%;
+  bottom: 22px;
+
+  transform: translateX(-50%);
+
+  width: 315px;
+  height: 30px;
+
+  border-radius: 50%;
+
+  background:
+    linear-gradient(
+      to bottom,
+      #ffffff,
+      #f3dfe7
+    );
+
+  border: 2px solid #e8c5d3;
+
+  box-shadow:
+    0 15px 25px rgba(100, 40, 60, 0.18),
+    inset 0 3px 5px rgba(255,255,255,.9);
+
+  z-index: 1;
+}
+
+
+/* plate inner shine */
+
+.plate-shine {
+  position: absolute;
+
+  left: 50%;
+  top: 5px;
+
+  transform: translateX(-50%);
+
+  width: 240px;
+  height: 7px;
+
+  border-radius: 50%;
+
+  background: rgba(255,255,255,.8);
+
+  filter: blur(2px);
+}
+
+
+/* =====================================================
+   CAKE BODY
+===================================================== */
+
+.cake-body {
+  position: absolute;
+
+  left: 50%;
+  bottom: 37px;
+
+  transform: translateX(-50%);
+
+  width: 300px;
+  height: 350px;
+
+  z-index: 5;
+}
+
+
+/* =====================================================
+   COMMON LAYER
+===================================================== */
+
+.cake-layer {
+  position: absolute;
+
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  width: 100%;
+
+  border-radius:
+    22px
+    22px
+    18px
+    18px;
+
+  overflow: visible;
+
+  box-shadow:
+    0 12px 18px rgba(115, 42, 66, 0.14);
+}
+
+
+/* =====================================================
+   BOTTOM LAYER
+===================================================== */
+
+.cake-layer-one {
+
+  bottom: 0;
+
+  height: 95px;
+
+  animation:
+    layerFallOne
+    1s
+    cubic-bezier(.2,.9,.3,1.3)
+    both;
+}
+
+@keyframes layerFallOne {
+
+  0% {
+    opacity: 0;
+    transform:
+      translate(-50%, -430px)
+      rotate(-5deg);
+  }
+
+  65% {
+    transform:
+      translate(-50%, 15px)
+      rotate(2deg);
+  }
+
+  82% {
+    transform:
+      translate(-50%, -5px)
+      rotate(-1deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform:
+      translate(-50%, 0)
+      rotate(0);
+  }
+}
+
+
+/* =====================================================
+   MIDDLE LAYER
+===================================================== */
+
+.cake-layer-two {
+
+  bottom: 82px;
+
+  width: 265px;
+  height: 88px;
+
+  animation:
+    layerFallTwo
+    1s
+    cubic-bezier(.2,.9,.3,1.3)
+    both;
+}
+
+@keyframes layerFallTwo {
+
+  0% {
+    opacity: 0;
+
+    transform:
+      translate(-50%, -400px)
+      rotate(6deg);
+  }
+
+  65% {
+    transform:
+      translate(-50%, 13px)
+      rotate(-2deg);
+  }
+
+  82% {
+    transform:
+      translate(-50%, -4px)
+      rotate(1deg);
+  }
+
+  100% {
+    opacity: 1;
+
+    transform:
+      translate(-50%, 0)
+      rotate(0);
+  }
+}
+
+
+/* =====================================================
+   TOP LAYER
+===================================================== */
+
+.cake-layer-three {
+
+  bottom: 158px;
+
+  width: 225px;
+  height: 82px;
+
+  animation:
+    layerFallThree
+    1s
+    cubic-bezier(.2,.9,.3,1.3)
+    both;
+}
+
+@keyframes layerFallThree {
+
+  0% {
+    opacity: 0;
+
+    transform:
+      translate(-50%, -380px)
+      rotate(-5deg);
+  }
+
+  65% {
+    transform:
+      translate(-50%, 12px)
+      rotate(2deg);
+  }
+
+  82% {
+    transform:
+      translate(-50%, -4px)
+      rotate(-1deg);
+  }
+
+  100% {
+    opacity: 1;
+
+    transform:
+      translate(-50%, 0)
+      rotate(0);
+  }
+}
+
+
+/* =====================================================
+   SPONGE
+===================================================== */
+
+.cake-sponge {
+  position: absolute;
+
+  inset: 0;
+
+  border-radius:
+    20px
+    20px
+    16px
+    16px;
+
+  background:
+    linear-gradient(
+      100deg,
+      #f59a83 0%,
+      #ffb092 25%,
+      #f78f79 50%,
+      #ffad8c 75%,
+      #e97d6e 100%
+    );
+
+  border:
+    3px solid
+    rgba(255,255,255,.7);
+
+  box-shadow:
+    inset 0 -15px 20px rgba(160, 55, 55, .12),
+    inset 0 8px 12px rgba(255,255,255,.45);
+}
+
+
+/* =====================================================
+   CREAM
+===================================================== */
+
+.cake-cream {
+  position: absolute;
+
+  left: 5px;
+  right: 5px;
+
+  top: -8px;
+
+  height: 22px;
+
+  border-radius: 50%;
+
+  background:
+    linear-gradient(
+      to bottom,
+      #fffdfb,
+      #ffe9ef
+    );
+
+  box-shadow:
+    0 3px 6px rgba(180,80,110,.12);
+}
+
+
+/* =====================================================
+   TOP CREAM
+===================================================== */
+
+.cake-top-cream {
+  position: absolute;
+
+  left: -2px;
+  right: -2px;
+
+  top: -12px;
+
+  height: 30px;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      ellipse at center,
+      #fffdfb 0%,
+      #ffe9ef 70%,
+      #f7d6df 100%
+    );
+
+  border:
+    2px solid
+    rgba(255,255,255,.9);
+
+  box-shadow:
+    0 4px 7px rgba(180,80,110,.12);
+}
+
+
+/* =====================================================
+   CREAM DRIPS
+===================================================== */
+
+.cake-drips {
+  position: absolute;
+
+  left: 7px;
+  right: 7px;
+
+  top: 6px;
+
+  height: 35px;
+
+  pointer-events: none;
+}
+
+.cake-drips span {
+  position: absolute;
+
+  top: 0;
+
+  width: 14px;
+  height: 30px;
+
+  border-radius:
+    0 0
+    10px
+    10px;
+
+  background:
+    linear-gradient(
+      to bottom,
+      #fffdfb,
+      #ffe5ec
+    );
+
+  box-shadow:
+    inset 0 -3px 4px rgba(200,100,130,.08);
+}
+
+.cake-drips span:nth-child(1) {
+  left: 12%;
+  height: 25px;
+}
+
+.cake-drips span:nth-child(2) {
+  left: 34%;
+  height: 35px;
+}
+
+.cake-drips span:nth-child(3) {
+  left: 55%;
+  height: 27px;
+}
+
+.cake-drips span:nth-child(4) {
+  left: 75%;
+  height: 34px;
+}
+
+.cake-drips span:nth-child(5) {
+  left: 90%;
+  height: 22px;
+}
+
+
+/* =====================================================
+   BERRIES
+===================================================== */
+
+.cream-berry {
+  position: absolute;
+
+  width: 13px;
+  height: 13px;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle at 35% 30%,
+      #ffccd8,
+      #ed4f79 50%,
+      #b72e56
+    );
+
+  box-shadow:
+    0 3px 5px rgba(150,40,70,.2);
+}
+
+.berry-one {
+  left: 25%;
+  top: 6px;
+}
+
+.berry-two {
+  left: 50%;
+  top: 3px;
+}
+
+.berry-three {
+  right: 24%;
+  top: 7px;
+}
+
+
+/* =====================================================
+   SPRINKLES
+===================================================== */
+
+.cake-sprinkles {
+  position: absolute;
+
+  left: 50%;
+  top: 158px;
+
+  transform: translateX(-50%);
+
+  width: 175px;
+  height: 35px;
+
+  pointer-events: none;
+
+  z-index: 10;
+}
+
+.cake-sprinkles i {
+  position: absolute;
+
+  width: 10px;
+  height: 3px;
+
+  border-radius: 5px;
+
+  transform: rotate(25deg);
+
+  background: #ff6e8c;
+}
+
+.cake-sprinkles i:nth-child(1) {
+  left: 10%;
+  top: 12px;
+  background: #ef6d88;
+}
+
+.cake-sprinkles i:nth-child(2) {
+  left: 25%;
+  top: 5px;
+  background: #ffc63d;
+  transform: rotate(-20deg);
+}
+
+.cake-sprinkles i:nth-child(3) {
+  left: 40%;
+  top: 15px;
+  background: #73b9ed;
+}
+
+.cake-sprinkles i:nth-child(4) {
+  left: 55%;
+  top: 4px;
+  background: #f08c54;
+}
+
+.cake-sprinkles i:nth-child(5) {
+  left: 70%;
+  top: 15px;
+  background: #ef6d88;
+}
+
+.cake-sprinkles i:nth-child(6) {
+  left: 85%;
+  top: 6px;
+  background: #ffc63d;
+}
+
+.cake-sprinkles i:nth-child(7) {
+  left: 33%;
+  top: 25px;
+  background: #8fc98f;
+}
+
+.cake-sprinkles i:nth-child(8) {
+  left: 62%;
+  top: 25px;
+  background: #8c7eea;
+}
+
+
+/* =====================================================
+   CANDLE
+===================================================== */
+
+.birthday-candle {
+  position: absolute;
+
+  left: 50%;
+
+  bottom: 218px;
+
+  transform:
+    translateX(-50%);
+
+  width: 34px;
+  height: 105px;
+
+  z-index: 30;
+
+  animation:
+    candleDrop
+    1.2s
+    cubic-bezier(.2,.9,.3,1.4)
+    both;
+}
+
+@keyframes candleDrop {
+
+  0% {
+    opacity: 0;
+
+    transform:
+      translate(-50%, -350px)
+      rotate(-5deg);
+  }
+
+  65% {
+    transform:
+      translate(-50%, 10px)
+      rotate(2deg);
+  }
+
+  82% {
+    transform:
+      translate(-50%, -3px)
+      rotate(-1deg);
+  }
+
+  100% {
+    opacity: 1;
+
+    transform:
+      translate(-50%, 0)
+      rotate(0);
+  }
+}
+
+
+/* =====================================================
+   CANDLE STICK
+===================================================== */
+
+.candle-stick {
+  position: absolute;
+
+  left: 50%;
+  bottom: 0;
+
+  transform:
+    translateX(-50%);
+
+  width: 25px;
+  height: 78px;
+
+  border-radius:
+    8px
+    8px
+    5px
+    5px;
+
+  background:
+    repeating-linear-gradient(
+      -25deg,
+      #fff8fb 0px,
+      #fff8fb 8px,
+      #f39abb 9px,
+      #f39abb 12px
+    );
+
+  border:
+    2px solid #df9aae;
+
+  box-shadow:
+    inset 4px 0 5px rgba(255,255,255,.8),
+    inset -4px 0 6px rgba(160,70,100,.12),
+    0 5px 8px rgba(130,50,70,.15);
+}
+
+
+/* candle wax top */
+
+.candle-stick::before {
+  content: "";
+
+  position: absolute;
+
+  left: 50%;
+  top: -5px;
+
+  transform: translateX(-50%);
+
+  width: 25px;
+  height: 10px;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      ellipse,
+      #fffdfd,
+      #f3c7d4
+    );
+}
+
+
+/* =====================================================
+   WICK
+===================================================== */
+
+.candle-wick {
+  position: absolute;
+
+  left: 50%;
+  top: 16px;
+
+  transform:
+    translateX(-50%);
+
+  width: 3px;
+  height: 15px;
+
+  border-radius: 3px;
+
+  background:
+    linear-gradient(
+      to bottom,
+      #211715,
+      #6c3930
+    );
+
+  z-index: 5;
+}
+
+
+/* =====================================================
+   REALISTIC FLAME
+===================================================== */
+
+.real-flame {
+  position: absolute;
+
+  left: 50%;
+  top: -53px;
+
+  transform:
+    translateX(-50%);
+
+  width: 38px;
+  height: 58px;
+
+  z-index: 20;
+
+  filter:
+    drop-shadow(
+      0 0 8px
+      rgba(255, 150, 20, .85)
+    );
+
+  animation:
+    flameMove
+    .55s
+    ease-in-out
+    infinite alternate;
+}
+
+
+/* outer flame */
+
+.flame-outer {
+  position: absolute;
+
+  left: 50%;
+  bottom: 0;
+
+  transform:
+    translateX(-50%)
+    rotate(3deg);
+
+  width: 34px;
+  height: 52px;
+
+  border-radius:
+    50%
+    50%
+    50%
+    50% / 
+    65%
+    65%
+    35%
+    35%;
+
+  background:
+    linear-gradient(
+      to top,
+      #ff5b16,
+      #ff8c00 50%,
+      #ffd21f
+    );
+
+  clip-path:
+    polygon(
+      50% 0%,
+      75% 30%,
+      88% 55%,
+      80% 80%,
+      60% 100%,
+      38% 96%,
+      20% 75%,
+      15% 50%,
+      30% 25%
+    );
+}
+
+
+/* middle flame */
+
+.flame-middle {
+  position: absolute;
+
+  left: 50%;
+  bottom: 5px;
+
+  transform:
+    translateX(-50%);
+
+  width: 23px;
+  height: 38px;
+
+  background:
+    linear-gradient(
+      to top,
+      #ff9d00,
+      #ffe03b
+    );
+
+  clip-path:
+    polygon(
+      50% 0%,
+      70% 35%,
+      85% 65%,
+      65% 100%,
+      35% 100%,
+      15% 65%,
+      30% 30%
+    );
+}
+
+
+/* inner flame */
+
+.flame-inner {
+  position: absolute;
+
+  left: 50%;
+  bottom: 7px;
+
+  transform:
+    translateX(-50%);
+
+  width: 12px;
+  height: 25px;
+
+  background:
+    linear-gradient(
+      to top,
+      #fff7a0,
+      #ffffff
+    );
+
+  clip-path:
+    polygon(
+      50% 0%,
+      80% 45%,
+      70% 100%,
+      30% 100%,
+      20% 45%
+    );
+}
+
+
+/* flame movement */
+
+@keyframes flameMove {
+
+  0% {
+    transform:
+      translateX(-50%)
+      scaleX(.88)
+      rotate(-3deg);
+  }
+
+  30% {
+    transform:
+      translateX(-50%)
+      scaleX(1)
+      rotate(2deg);
+  }
+
+  60% {
+    transform:
+      translateX(-50%)
+      scaleX(.92)
+      rotate(-2deg);
+  }
+
+  100% {
+    transform:
+      translateX(-50%)
+      scaleX(1.08)
+      rotate(4deg);
+  }
+}
+
+
+/* =====================================================
+   FLAME LIGHT
+===================================================== */
+
+.real-flame::after {
+  content: "";
+
+  position: absolute;
+
+  left: 50%;
+  top: 5px;
+
+  transform:
+    translateX(-50%);
+
+  width: 70px;
+  height: 70px;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(255, 173, 35, .35),
+      transparent 68%
+    );
+
+  filter: blur(8px);
+
+  z-index: -1;
+
+  animation:
+    fireGlow
+    .7s
+    ease-in-out
+    infinite alternate;
+}
+
+@keyframes fireGlow {
+
+  from {
+    opacity: .5;
+    transform:
+      translateX(-50%)
+      scale(.85);
+  }
+
+  to {
+    opacity: .95;
+    transform:
+      translateX(-50%)
+      scale(1.15);
+  }
+}
+
+
+/* =====================================================
+   CANDLE OFF
+===================================================== */
+
+.candle-off .real-flame {
+  display: none;
+}
+
+.candle-off .candle-wick::after {
+  content: "";
+
+  position: absolute;
+
+  left: 50%;
+  top: -3px;
+
+  transform:
+    translateX(-50%);
+
+  width: 10px;
+  height: 8px;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      #777,
+      #292929
+    );
+
+  box-shadow:
+    0 0 8px
+    rgba(100,100,100,.4);
+}
+
+
+/* =====================================================
+   CAKE SLICE
+===================================================== */
+
+.cake-slice {
+
+  position: absolute;
+
+  left: 50%;
+  bottom: 20px;
+
+  width: 95px;
+  height: 105px;
+
+  z-index: 50;
+
+  transform-origin:
+    bottom left;
+
+  animation:
+    sliceOut
+    .8s
+    cubic-bezier(.2,.9,.3,1.2)
+    forwards;
+}
+
+@keyframes sliceOut {
+
+  0% {
+    opacity: 0;
+
+    transform:
+      translate(-50%, 30px)
+      rotate(0)
+      scale(.5);
+  }
+
+  100% {
+    opacity: 1;
+
+    transform:
+      translate(-210px, 10px)
+      rotate(-7deg)
+      scale(1);
+  }
+}
+
+
+/* slice sponge */
+
+.slice-sponge {
+  position: absolute;
+
+  left: 0;
+  bottom: 0;
+
+  width: 90px;
+  height: 72px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #f58f78,
+      #ffb18d
+    );
+
+  clip-path:
+    polygon(
+      0 100%,
+      100% 100%,
+      75% 0,
+      20% 0
+    );
+
+  border-radius: 5px;
+}
+
+
+/* slice cream */
+
+.slice-cream {
+  position: absolute;
+
+  left: 8px;
+  bottom: 45px;
+
+  width: 75px;
+  height: 18px;
+
+  border-radius: 50%;
+
+  background:
+    linear-gradient(
+      to bottom,
+      #fff,
+      #ffe4eb
+    );
+
+  z-index: 3;
+}
+
+
+/* slice frosting */
+
+.slice-frosting {
+  position: absolute;
+
+  left: 10px;
+  bottom: 67px;
+
+  width: 70px;
+  height: 20px;
+
+  border-radius: 50%;
+
+  background: #fff;
+
+  z-index: 5;
+}
+
+.slice-frosting span {
+  position: absolute;
+
+  width: 10px;
+  height: 16px;
+
+  border-radius:
+    0 0
+    8px
+    8px;
+
+  background: #ffe5ec;
+
+  top: 7px;
+}
+
+.slice-frosting span:nth-child(1) {
+  left: 15px;
+}
+
+.slice-frosting span:nth-child(2) {
+  left: 32px;
+}
+
+.slice-frosting span:nth-child(3) {
+  left: 50px;
+}
+
+
+/* =====================================================
+   GROUND SHADOW
+===================================================== */
+
+.cake-ground-shadow {
+  position: absolute;
+
+  left: 50%;
+  bottom: 14px;
+
+  transform: translateX(-50%);
+
+  width: 280px;
+  height: 25px;
+
+  border-radius: 50%;
+
+  background:
+    rgba(110, 45, 65, .15);
+
+  filter: blur(8px);
+
+  z-index: 0;
+}
+
+
+/* =====================================================
+   CONFETTI / POP BURST
+===================================================== */
+
+.confetti-container {
+  position: absolute;
+  left: 50%;
+  bottom: 120px;
+  width: 260px;
+  height: 160px;
+  pointer-events: none;
+  transform: translateX(-50%);
+  z-index: 60;
+}
+
+.confetti-container.confetti-left {
+  left: 18%;
+  transform: translateX(0);
+}
+
+.confetti-container.confetti-right {
+  left: auto;
+  right: 18%;
+  transform: translateX(0);
+}
+
+.confetti-container i {
+  position: absolute;
+  width: 8px;
+  height: 12px;
+  border-radius: 2px;
+  opacity: 0;
+  transform-origin: center;
+  animation: confettiPop 1100ms forwards cubic-bezier(.2,.9,.3,1.1);
+}
+
+/* color variants */
+.confetti-container i:nth-child(1) { background: #ff6e8c; left: 20%; }
+.confetti-container i:nth-child(2) { background: #ffd45a; left: 35%; }
+.confetti-container i:nth-child(3) { background: #73b9ed; left: 50%; }
+.confetti-container i:nth-child(4) { background: #8fc98f; left: 65%; }
+.confetti-container i:nth-child(5) { background: #ef6d88; left: 80%; }
+.confetti-container i:nth-child(6) { background: #ffc63d; left: 10%; }
+.confetti-container i:nth-child(7) { background: #8c7eea; left: 88%; }
+.confetti-container i:nth-child(8) { background: #f08c54; left: 5%; }
+
+/* stagger delays and trajectories for left and right containers */
+.confetti-container.confetti-left i:nth-child(1) { animation-delay: 0ms; transform: translateY(0) rotate(0); }
+.confetti-container.confetti-left i:nth-child(2) { animation-delay: 40ms; transform: translateY(0) rotate(0); }
+.confetti-container.confetti-left i:nth-child(3) { animation-delay: 80ms; transform: translateY(0) rotate(0); }
+.confetti-container.confetti-left i:nth-child(4) { animation-delay: 120ms; transform: translateY(0) rotate(0); }
+.confetti-container.confetti-left i:nth-child(5) { animation-delay: 160ms; transform: translateY(0) rotate(0); }
+.confetti-container.confetti-left i:nth-child(6) { animation-delay: 200ms; transform: translateY(0) rotate(0); }
+.confetti-container.confetti-left i:nth-child(7) { animation-delay: 240ms; transform: translateY(0) rotate(0); }
+.confetti-container.confetti-left i:nth-child(8) { animation-delay: 280ms; transform: translateY(0) rotate(0); }
+
+.confetti-container.confetti-right i:nth-child(1) { animation-delay: 20ms; transform: translateY(0) rotate(0); }
+.confetti-container.confetti-right i:nth-child(2) { animation-delay: 60ms; transform: translateY(0) rotate(0); }
+.confetti-container.confetti-right i:nth-child(3) { animation-delay: 100ms; transform: translateY(0) rotate(0); }
+.confetti-container.confetti-right i:nth-child(4) { animation-delay: 140ms; transform: translateY(0) rotate(0); }
+.confetti-container.confetti-right i:nth-child(5) { animation-delay: 180ms; transform: translateY(0) rotate(0); }
+.confetti-container.confetti-right i:nth-child(6) { animation-delay: 220ms; transform: translateY(0) rotate(0); }
+.confetti-container.confetti-right i:nth-child(7) { animation-delay: 260ms; transform: translateY(0) rotate(0); }
+.confetti-container.confetti-right i:nth-child(8) { animation-delay: 300ms; transform: translateY(0) rotate(0); }
+
+@keyframes confettiPop {
+  0% { opacity: 0; transform: translateY(0) rotate(0) scale(1); }
+  10% { opacity: 1; }
+  60% { transform: translateY(-160px) translateX(-40px) rotate(220deg) scale(1); }
+  100% { opacity: 0; transform: translateY(-240px) translateX(-80px) rotate(420deg) scale(.9); }
+}
+
+/* mirror animation for right side - override translateX in keyframe by using different transform on elements */
+.confetti-container.confetti-right i {
+  animation-name: confettiPopRight;
+}
+
+@keyframes confettiPopRight {
+  0% { opacity: 0; transform: translateY(0) rotate(0) scale(1); }
+  10% { opacity: 1; }
+  60% { transform: translateY(-160px) translateX(40px) rotate(-220deg) scale(1); }
+  100% { opacity: 0; transform: translateY(-240px) translateX(80px) rotate(-420deg) scale(.9); }
+}
+
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 640px) {
+
+  .birthday-cake-scene {
+    width: 310px;
+    height: 380px;
+  }
+
+  .cake-plate {
+    width: 270px;
+  }
+
+  .cake-body {
+    width: 255px;
+    height: 315px;
+  }
+
+  .cake-layer-two {
+    width: 225px;
+  }
+
+  .cake-layer-three {
+    width: 195px;
+  }
+
+  .birthday-candle {
+    bottom: 198px;
+  }
+
+}
+
+
+/* =====================================================
+   REDUCE MOTION ACCESSIBILITY
+===================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .cake-layer-one,
+  .cake-layer-two,
+  .cake-layer-three,
+  .birthday-candle,
+  .real-flame,
+  .real-flame::after,
+  .cake-glow,
+  .cake-slice {
+    animation: none;
+  }
+
+}
