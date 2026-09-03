@@ -46,7 +46,7 @@ function WelcomePage() {
         flex
         items-center
         justify-center
-        bg-gradient-to-br
+        bg-linear-to-br
         from-[#fff1f6]
         via-[#ffd9e7]
         to-[#ffb6cf]
@@ -153,7 +153,7 @@ function WelcomePage() {
             flex
             justify-center
             gap-5
-            min-h-[70px]
+            min-h-17.5
           "
         >
 

@@ -37,7 +37,7 @@ function PasswordPage() {
   };
 
   return (
-    <main className="relative min-h-screen w-full grid place-items-center overflow-hidden bg-gradient-to-br from-pink-50 via-pink-100 to-pink-200">
+    <main className="relative min-h-screen w-full grid place-items-center overflow-hidden bg-linear-to-br from-pink-50 via-pink-100 to-pink-200">
       {/* Decorative floating hearts */}
       <motion.div
         aria-hidden
