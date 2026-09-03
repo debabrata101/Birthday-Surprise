@@ -307,6 +307,8 @@
 
   .teddy-hanging-card {
     width: 75px;
+    top: 30px;
+    animation: none;
   }
 
   .teddy-string {
@@ -347,15 +349,17 @@
   }
 
   .teddy-card-3 {
-    left: 39%;
+    left: 42%;
   }
 
   .teddy-card-4 {
-    right: 19%;
+    left: 62%;
+    right: auto;
   }
 
   .teddy-card-5 {
-    right: 2%;
+    left: 82%;
+    right: auto;
   }
 
   .teddy-page > section {
@@ -370,6 +374,7 @@
 @media (max-width: 420px) {
   .teddy-hanging-card {
     width: 62px;
+    top: 22px;
   }
 
   .teddy-string {
@@ -404,7 +409,8 @@
     transform: translateX(-50%);
   }
 
-  .teddy-card-5 {
+  .teddy-card-4 {
+    left: auto;
     right: 5%;
   }
 }
