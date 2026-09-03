@@ -1616,6 +1616,22 @@ footer {
   }
 }
 
+@media (max-width: 420px) {
+  .cake-section {
+    width: calc(100% - 16px);
+  }
+
+  .cake-scene-wrap {
+    min-height: clamp(300px, 75vw, 350px);
+  }
+
+  .cut-message,
+  .cake-final-card {
+    border-radius: 18px;
+    text-align: center;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .cake-page *,
   .cake-page *::before,

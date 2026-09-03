@@ -24,8 +24,9 @@ function WelcomePage() {
 
   const moveNo = () => {
 
+    const range = window.innerWidth <= 640 ? 50 : 110;
     const x =
-      Math.random() * 220 - 110;
+      Math.random() * range * 2 - range;
 
     const y =
       Math.random() * 140 - 70;
@@ -45,7 +46,6 @@ function WelcomePage() {
         flex
         items-center
         justify-center
-        overflow-hidden
         bg-gradient-to-br
         from-[#fff1f6]
         via-[#ffd9e7]
