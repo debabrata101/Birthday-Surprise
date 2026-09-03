@@ -2,8 +2,8 @@ import { motion } from "framer-motion";
 
 import { useNavigate } from "react-router-dom";
 
-import Balloons from "../Components/Balloons";
-import NextButton from "../Components/NextButton";
+import Balloons from "../components/Balloons";
+import NextButton from "../components/NextButton";
 
 function BirthdayPage() {
   const navigate = useNavigate();

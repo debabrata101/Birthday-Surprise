@@ -1,9 +1,9 @@
 import { useNavigate } from "react-router-dom";
 
-import Balloons from "../Components/Balloons";
-import PhotoFrame from "../Components/PhotoFrame";
-import AltaTree from "../Components/AltaTree";
-import NextButton from "../Components/NextButton";
+import Balloons from "../components/Balloons";
+import PhotoFrame from "../components/PhotoFrame";
+import AltaTree from "../components/AltaTree";
+import NextButton from "../components/NextButton";
 import "./TeddyPage.css";
 
 function TeddyPage() {

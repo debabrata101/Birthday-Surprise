@@ -3,8 +3,8 @@ import { useNavigate } from "react-router-dom";
 
 import { motion, AnimatePresence } from "framer-motion";
 
-import Balloons from "../Components/Balloons";
-import Mailbox from "../Components/Mailbox";
+import Balloons from "../components/Balloons";
+import Mailbox from "../components/Mailbox";
 import Typewriter from "../components/Typewriter";
 
 const wishes = [
