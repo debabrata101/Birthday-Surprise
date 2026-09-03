@@ -253,7 +253,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           sm:text-sm\r
           text-[#9b523b]\r
           mt-1\r
-        `,children:[`With `,(0,X.jsx)(`span`,{className:`text-pink-500 font-semibold`,children:`love`}),`, smiles & sunshine ☀️`]})]})]})}var hp=(...e)=>e.filter((e,t,n)=>!!e&&e.trim()!==``&&n.indexOf(e)===t).join(` `).trim(),gp=e=>e.replace(/([a-z0-9])([A-Z])/g,`$1-$2`).toLowerCase(),_p=e=>e.replace(/^([A-Z])|[\s-_]+(\w)/g,(e,t,n)=>n?n.toUpperCase():t.toLowerCase()),vp=e=>{let t=_p(e);return t.charAt(0).toUpperCase()+t.slice(1)},yp={xmlns:`http://www.w3.org/2000/svg`,width:24,height:24,viewBox:`0 0 24 24`,fill:`none`,stroke:`currentColor`,strokeWidth:2,strokeLinecap:`round`,strokeLinejoin:`round`},bp=e=>{for(let t in e)if(t.startsWith(`aria-`)||t===`role`||t===`title`)return!0;return!1},xp=(0,x.createContext)({}),Sp=()=>(0,x.useContext)(xp),Cp=(0,x.forwardRef)(({color:e,size:t,strokeWidth:n,absoluteStrokeWidth:r,className:i=``,children:a,iconNode:o,...s},c)=>{let{size:l=24,strokeWidth:u=2,absoluteStrokeWidth:d=!1,color:f=`currentColor`,className:p=``}=Sp()??{},m=r??d?Number(n??u)*24/Number(t??l):n??u;return(0,x.createElement)(`svg`,{ref:c,...yp,width:t??l??yp.width,height:t??l??yp.height,stroke:e??f,strokeWidth:m,className:hp(`lucide`,p,i),...!a&&!bp(s)&&{"aria-hidden":`true`},...s},[...o.map(([e,t])=>(0,x.createElement)(e,t)),...Array.isArray(a)?a:[a]])}),wp=(e,t)=>{let n=(0,x.forwardRef)(({className:n,...r},i)=>(0,x.createElement)(Cp,{ref:i,iconNode:t,className:hp(`lucide-${gp(vp(e))}`,`lucide-${e}`,n),...r}));return n.displayName=vp(e),n},Tp=wp(`arrow-right`,[[`path`,{d:`M5 12h14`,key:`1ays0h`}],[`path`,{d:`m12 5 7 7-7 7`,key:`xquz4c`}]]),Ep=wp(`volume-2`,[[`path`,{d:`M11 4.702a.705.705 0 0 0-1.203-.498L6.413 7.587A1.4 1.4 0 0 1 5.416 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.416a1.4 1.4 0 0 1 .997.413l3.383 3.384A.705.705 0 0 0 11 19.298z`,key:`uqj9uw`}],[`path`,{d:`M16 9a5 5 0 0 1 0 6`,key:`1q6k2b`}],[`path`,{d:`M19.364 18.364a9 9 0 0 0 0-12.728`,key:`ijwkga`}]]),Dp=wp(`volume-x`,[[`path`,{d:`M11 4.702a.705.705 0 0 0-1.203-.498L6.413 7.587A1.4 1.4 0 0 1 5.416 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.416a1.4 1.4 0 0 1 .997.413l3.383 3.384A.705.705 0 0 0 11 19.298z`,key:`uqj9uw`}],[`line`,{x1:`22`,x2:`16`,y1:`9`,y2:`15`,key:`1ewh16`}],[`line`,{x1:`16`,x2:`22`,y1:`9`,y2:`15`,key:`5ykzw1`}]]);function Op({children:e,onClick:t}){return(0,X.jsxs)(`button`,{onClick:t,className:`\r
+        `,children:[`With `,(0,X.jsx)(`span`,{className:`text-pink-500 font-semibold`,children:`love`}),`, smiles & sunshine ☀️`]})]})]})}var hp=(...e)=>e.filter((e,t,n)=>!!e&&e.trim()!==``&&n.indexOf(e)===t).join(` `).trim(),gp=e=>e.replace(/([a-z0-9])([A-Z])/g,`$1-$2`).toLowerCase(),_p=e=>e.replace(/^([A-Z])|[\s-_]+(\w)/g,(e,t,n)=>n?n.toUpperCase():t.toLowerCase()),vp=e=>{let t=_p(e);return t.charAt(0).toUpperCase()+t.slice(1)},yp={xmlns:`http://www.w3.org/2000/svg`,width:24,height:24,viewBox:`0 0 24 24`,fill:`none`,stroke:`currentColor`,strokeWidth:2,strokeLinecap:`round`,strokeLinejoin:`round`},bp=e=>{for(let t in e)if(t.startsWith(`aria-`)||t===`role`||t===`title`)return!0;return!1},xp=(0,x.createContext)({}),Sp=()=>(0,x.useContext)(xp),Cp=(0,x.forwardRef)(({color:e,size:t,strokeWidth:n,absoluteStrokeWidth:r,className:i=``,children:a,iconNode:o,...s},c)=>{let{size:l=24,strokeWidth:u=2,absoluteStrokeWidth:d=!1,color:f=`currentColor`,className:p=``}=Sp()??{},m=r??d?Number(n??u)*24/Number(t??l):n??u;return(0,x.createElement)(`svg`,{ref:c,...yp,width:t??l??yp.width,height:t??l??yp.height,stroke:e??f,strokeWidth:m,className:hp(`lucide`,p,i),...!a&&!bp(s)&&{"aria-hidden":`true`},...s},[...o.map(([e,t])=>(0,x.createElement)(e,t)),...Array.isArray(a)?a:[a]])}),wp=(e,t)=>{let n=(0,x.forwardRef)(({className:n,...r},i)=>(0,x.createElement)(Cp,{ref:i,iconNode:t,className:hp(`lucide-${gp(vp(e))}`,`lucide-${e}`,n),...r}));return n.displayName=vp(e),n},Tp=wp(`arrow-right`,[[`path`,{d:`M5 12h14`,key:`1ays0h`}],[`path`,{d:`m12 5 7 7-7 7`,key:`xquz4c`}]]),Ep=wp(`heart`,[[`path`,{d:`M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5`,key:`mvr1a0`}]]),Dp=wp(`party-popper`,[[`path`,{d:`M5.8 11.3 2 22l10.7-3.79`,key:`gwxi1d`}],[`path`,{d:`M4 3h.01`,key:`1vcuye`}],[`path`,{d:`M22 8h.01`,key:`1mrtc2`}],[`path`,{d:`M15 2h.01`,key:`1cjtqr`}],[`path`,{d:`M22 20h.01`,key:`1mrys2`}],[`path`,{d:`m22 2-2.24.75a2.9 2.9 0 0 0-1.96 3.12c.1.86-.57 1.63-1.45 1.63h-.38c-.86 0-1.6.6-1.76 1.44L14 10`,key:`hbicv8`}],[`path`,{d:`m22 13-.82-.33c-.86-.34-1.82.2-1.98 1.11c-.11.7-.72 1.22-1.43 1.22H17`,key:`1i94pl`}],[`path`,{d:`m11 2 .33.82c.34.86-.2 1.82-1.11 1.98C9.52 4.9 9 5.52 9 6.23V7`,key:`1cofks`}],[`path`,{d:`M11 13c1.93 1.93 2.83 4.17 2 5-.83.83-3.07-.07-5-2-1.93-1.93-2.83-4.17-2-5 .83-.83 3.07.07 5 2Z`,key:`4kbmks`}]]),Op=wp(`sparkles`,[[`path`,{d:`M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z`,key:`1s2grr`}],[`path`,{d:`M20 2v4`,key:`1rf3ol`}],[`path`,{d:`M22 4h-4`,key:`gwowj6`}],[`circle`,{cx:`4`,cy:`20`,r:`2`,key:`6kqj1y`}]]),kp=wp(`volume-2`,[[`path`,{d:`M11 4.702a.705.705 0 0 0-1.203-.498L6.413 7.587A1.4 1.4 0 0 1 5.416 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.416a1.4 1.4 0 0 1 .997.413l3.383 3.384A.705.705 0 0 0 11 19.298z`,key:`uqj9uw`}],[`path`,{d:`M16 9a5 5 0 0 1 0 6`,key:`1q6k2b`}],[`path`,{d:`M19.364 18.364a9 9 0 0 0 0-12.728`,key:`ijwkga`}]]),Ap=wp(`volume-x`,[[`path`,{d:`M11 4.702a.705.705 0 0 0-1.203-.498L6.413 7.587A1.4 1.4 0 0 1 5.416 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.416a1.4 1.4 0 0 1 .997.413l3.383 3.384A.705.705 0 0 0 11 19.298z`,key:`uqj9uw`}],[`line`,{x1:`22`,x2:`16`,y1:`9`,y2:`15`,key:`1ewh16`}],[`line`,{x1:`16`,x2:`22`,y1:`9`,y2:`15`,key:`5ykzw1`}]]);function jp({children:e,onClick:t}){return(0,X.jsxs)(`button`,{onClick:t,className:`\r
         inline-flex\r
         items-center\r
         justify-center\r
@@ -273,22 +273,22 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
         active:scale-95\r
         transition\r
         duration-300\r
-      `,children:[e,(0,X.jsx)(Tp,{size:18})]})}function kp(){let e=k();return(0,X.jsxs)(`main`,{className:`\r
+      `,children:[e,(0,X.jsx)(Tp,{size:18})]})}function Mp(){let e=k();return(0,X.jsxs)(`main`,{className:`\r
+        teddy-page\r
         screen-fit\r
         relative\r
         overflow-hidden\r
-        bg-gradient-to-br\r
+        bg-linear-to-br\r
         from-[#fff5f9]\r
         via-[#ffe1ec]\r
         to-[#ffc4d9]\r
-          pt-15\r
-      `,children:[(0,X.jsx)(up,{amount:8}),(0,X.jsxs)(`section`,{className:`\r
+      `,children:[(0,X.jsx)(up,{amount:8}),(0,X.jsx)(`div`,{className:`teddy-hanging-area`,"aria-label":`Birthday memories`,children:[`/images/her1.jpeg`,`/images/her2.jpeg`,`/images/her3.jpeg`,`/images/her4.jpeg`,`/images/her5.jpeg`,`/images/her6.jpeg`,`/images/her7.jpeg`,`/images/her8.jpeg`].map((e,t)=>(0,X.jsxs)(`div`,{className:`teddy-hanging-card teddy-card-${t+1}`,children:[(0,X.jsx)(`div`,{className:`teddy-string`,children:(0,X.jsx)(`span`,{className:`teddy-light`})}),(0,X.jsx)(`div`,{className:`teddy-photo-card`,children:(0,X.jsx)(`img`,{src:e,alt:`Her photo ${t+1}`,className:`teddy-card-image`})})]},t))}),(0,X.jsxs)(`section`,{className:`\r
           relative\r
           z-10\r
           h-full\r
           w-full\r
-          w-[min(1200px,94vw)]\r
-            mx-auto\r
+          max-w-300\r
+          mx-auto\r
           flex\r
           flex-col\r
           items-center\r
@@ -296,10 +296,8 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           px-4\r
           sm:px-6\r
           pb-5\r
-        `,children:[(0,X.jsxs)(`div`,{className:`\r
-          text-center\r
-          shrink-0\r
-        `,children:[(0,X.jsx)(`p`,{className:`\r
+          pt-14\r
+        `,children:[(0,X.jsxs)(`div`,{className:`text-center shrink-0`,children:[(0,X.jsx)(`p`,{className:`\r
               uppercase\r
               tracking-[.22em]\r
               text-[9px]\r
@@ -326,125 +324,16 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             max-h-[65vh]\r
           `,children:[(0,X.jsx)(`div`,{className:`\r
               w-[44%]\r
-              max-w-[430px]\r
+              max-w-107.5\r
               min-w-0\r
             `,children:(0,X.jsx)(dp,{})}),(0,X.jsx)(`div`,{className:`\r
               w-[44%]\r
-              max-w-[430px]\r
+              max-w-107.5\r
               min-w-0\r
-            `,children:(0,X.jsx)(mp,{})})]}),(0,X.jsx)(`div`,{className:`\r
-            shrink-0\r
-            mt-2\r
-          `,children:(0,X.jsx)(Op,{onClick:()=>e(`/cake`),children:`Next Surprise: The Cake`})})]})]})}function Ap({stage:e=0,candleOn:t=!0,cut:n=!1}){return(0,X.jsxs)(`div`,{className:`birthday-cake-scene`,children:[(0,X.jsx)(`div`,{className:`cake-glow`}),(0,X.jsx)(`div`,{className:`cake-plate`,children:(0,X.jsx)(`div`,{className:`plate-shine`})}),(0,X.jsxs)(`div`,{className:`cake-body`,children:[e>=1&&(0,X.jsxs)(`div`,{className:`cake-layer cake-layer-one`,children:[(0,X.jsx)(`div`,{className:`cake-sponge`}),(0,X.jsx)(`div`,{className:`cake-cream cream-one`}),(0,X.jsxs)(`div`,{className:`cake-drips`,children:[(0,X.jsx)(`span`,{}),(0,X.jsx)(`span`,{}),(0,X.jsx)(`span`,{}),(0,X.jsx)(`span`,{}),(0,X.jsx)(`span`,{})]})]}),e>=2&&(0,X.jsxs)(`div`,{className:`cake-layer cake-layer-two`,children:[(0,X.jsx)(`div`,{className:`cake-sponge`}),(0,X.jsx)(`div`,{className:`cake-cream cream-two`}),(0,X.jsxs)(`div`,{className:`cake-drips`,children:[(0,X.jsx)(`span`,{}),(0,X.jsx)(`span`,{}),(0,X.jsx)(`span`,{}),(0,X.jsx)(`span`,{})]})]}),e>=3&&(0,X.jsxs)(`div`,{className:`cake-layer cake-layer-three`,children:[(0,X.jsx)(`div`,{className:`cake-sponge`}),(0,X.jsxs)(`div`,{className:`cake-top-cream`,children:[(0,X.jsx)(`span`,{className:`cream-berry berry-one`}),(0,X.jsx)(`span`,{className:`cream-berry berry-two`}),(0,X.jsx)(`span`,{className:`cream-berry berry-three`})]}),(0,X.jsxs)(`div`,{className:`cake-drips`,children:[(0,X.jsx)(`span`,{}),(0,X.jsx)(`span`,{}),(0,X.jsx)(`span`,{}),(0,X.jsx)(`span`,{})]})]}),e>=4&&(0,X.jsxs)(`div`,{className:`
+            `,children:(0,X.jsx)(mp,{})})]}),(0,X.jsx)(`div`,{className:`shrink-0 mt-2`,children:(0,X.jsx)(jp,{onClick:()=>e(`/cake`),children:`Next Surprise: The Cake`})})]})]})}function Np({stage:e=0,candleOn:t=!0,cut:n=!1}){return(0,X.jsxs)(`div`,{className:`birthday-cake-scene`,children:[(0,X.jsx)(`div`,{className:`cake-glow`}),(0,X.jsx)(`div`,{className:`cake-plate`,children:(0,X.jsx)(`div`,{className:`plate-shine`})}),(0,X.jsxs)(`div`,{className:`cake-body`,children:[e>=1&&(0,X.jsxs)(`div`,{className:`cake-layer cake-layer-one`,children:[(0,X.jsx)(`div`,{className:`cake-sponge`}),(0,X.jsx)(`div`,{className:`cake-cream cream-one`}),(0,X.jsxs)(`div`,{className:`cake-drips`,children:[(0,X.jsx)(`span`,{}),(0,X.jsx)(`span`,{}),(0,X.jsx)(`span`,{}),(0,X.jsx)(`span`,{}),(0,X.jsx)(`span`,{})]})]}),e>=2&&(0,X.jsxs)(`div`,{className:`cake-layer cake-layer-two`,children:[(0,X.jsx)(`div`,{className:`cake-sponge`}),(0,X.jsx)(`div`,{className:`cake-cream cream-two`}),(0,X.jsxs)(`div`,{className:`cake-drips`,children:[(0,X.jsx)(`span`,{}),(0,X.jsx)(`span`,{}),(0,X.jsx)(`span`,{}),(0,X.jsx)(`span`,{})]})]}),e>=3&&(0,X.jsxs)(`div`,{className:`cake-layer cake-layer-three`,children:[(0,X.jsx)(`div`,{className:`cake-sponge`}),(0,X.jsxs)(`div`,{className:`cake-top-cream`,children:[(0,X.jsx)(`span`,{className:`cream-berry berry-one`}),(0,X.jsx)(`span`,{className:`cream-berry berry-two`}),(0,X.jsx)(`span`,{className:`cream-berry berry-three`})]}),(0,X.jsxs)(`div`,{className:`cake-drips`,children:[(0,X.jsx)(`span`,{}),(0,X.jsx)(`span`,{}),(0,X.jsx)(`span`,{}),(0,X.jsx)(`span`,{})]})]}),e>=4&&(0,X.jsxs)(`div`,{className:`
               birthday-candle
               ${t?`candle-active`:`candle-off`}
-            `,children:[t&&(0,X.jsxs)(`div`,{className:`real-flame`,children:[(0,X.jsx)(`div`,{className:`flame-outer`}),(0,X.jsx)(`div`,{className:`flame-middle`}),(0,X.jsx)(`div`,{className:`flame-inner`})]}),(0,X.jsx)(`div`,{className:`candle-wick`}),(0,X.jsxs)(`div`,{className:`candle-stick`,children:[(0,X.jsx)(`span`,{}),(0,X.jsx)(`span`,{}),(0,X.jsx)(`span`,{})]})]}),e>=3&&(0,X.jsxs)(`div`,{className:`cake-sprinkles`,children:[(0,X.jsx)(`i`,{}),(0,X.jsx)(`i`,{}),(0,X.jsx)(`i`,{}),(0,X.jsx)(`i`,{}),(0,X.jsx)(`i`,{}),(0,X.jsx)(`i`,{}),(0,X.jsx)(`i`,{}),(0,X.jsx)(`i`,{})]}),n&&(0,X.jsxs)(`div`,{className:`cake-slice`,children:[(0,X.jsx)(`div`,{className:`slice-cream`}),(0,X.jsx)(`div`,{className:`slice-sponge`}),(0,X.jsxs)(`div`,{className:`slice-frosting`,children:[(0,X.jsx)(`span`,{}),(0,X.jsx)(`span`,{}),(0,X.jsx)(`span`,{})]})]}),n&&(0,X.jsxs)(X.Fragment,{children:[(0,X.jsxs)(`div`,{className:`confetti-container confetti-left`,"aria-hidden":!0,children:[(0,X.jsx)(`i`,{}),(0,X.jsx)(`i`,{}),(0,X.jsx)(`i`,{}),(0,X.jsx)(`i`,{}),(0,X.jsx)(`i`,{}),(0,X.jsx)(`i`,{}),(0,X.jsx)(`i`,{}),(0,X.jsx)(`i`,{})]}),(0,X.jsxs)(`div`,{className:`confetti-container confetti-right`,"aria-hidden":!0,children:[(0,X.jsx)(`i`,{}),(0,X.jsx)(`i`,{}),(0,X.jsx)(`i`,{}),(0,X.jsx)(`i`,{}),(0,X.jsx)(`i`,{}),(0,X.jsx)(`i`,{}),(0,X.jsx)(`i`,{}),(0,X.jsx)(`i`,{})]})]})]}),(0,X.jsx)(`div`,{className:`cake-ground-shadow`})]})}function jp(){let e=k(),[t,n]=(0,x.useState)(0),[r,i]=(0,x.useState)(!0),[a,o]=(0,x.useState)(!1);return(0,x.useEffect)(()=>{let e=[setTimeout(()=>n(1),700),setTimeout(()=>n(2),1500),setTimeout(()=>n(3),2300),setTimeout(()=>n(4),3100)];return()=>{e.forEach(clearTimeout)}},[]),(0,X.jsxs)(`main`,{className:`\r
-        screen-fit\r
-        relative\r
-        flex\r
-        items-center\r
-        justify-center\r
-        overflow-hidden\r
-          pt-14\r
-          sm:pt-16\r
-        bg-gradient-to-br\r
-        from-[#fff5f9]\r
-        via-[#ffe0eb]\r
-        to-[#ffc0d7]\r
-      `,children:[(0,X.jsx)($.div,{animate:{scale:[1,1.15,1],opacity:[.2,.4,.2]},transition:{duration:4,repeat:1/0},className:`\r
-          absolute\r
-          w-[min(400px,90vw)]\r
-          aspect-square\r
-          rounded-full\r
-          bg-pink-300/30\r
-          blur-3xl\r
-        `}),(0,X.jsxs)(`section`,{className:`\r
-          relative\r
-          z-20\r
-          w-full\r
-          w-[min(850px,92vw)]\r
-          max-h-full\r
-          px-4\r
-          py-3\r
-          text-center\r
-          flex\r
-          flex-col\r
-          items-center\r
-          justify-center\r
-        `,children:[(0,X.jsxs)($.div,{initial:{opacity:0,y:-20},animate:{opacity:1,y:0},children:[(0,X.jsx)(`p`,{className:`\r
-              uppercase\r
-              tracking-[.25em]\r
-              text-[9px]\r
-              sm:text-xs\r
-              font-bold\r
-              text-[#b65376]\r
-            `,children:`Birthday Surprise · 02`}),(0,X.jsx)(`h1`,{className:`\r
-              font-serif\r
-              text-3xl\r
-              sm:text-5xl\r
-              md:text-6xl\r
-              font-bold\r
-              text-[#70263f]\r
-              mt-1\r
-            `,children:`Your Birthday Cake 🎂`}),(0,X.jsx)(`p`,{className:`\r
-              text-[#81586a]\r
-              text-xs\r
-              sm:text-base\r
-              mt-2\r
-            `,children:`Something sweet is waiting for you...`})]}),(0,X.jsx)(`div`,{className:`\r
-            mt-2\r
-            scale-[.72]\r
-            sm:scale-[.82]\r
-            md:scale-[.9]\r
-            lg:scale-100\r
-            -my-12\r
-            sm:-my-10\r
-          `,children:(0,X.jsx)(Ap,{stage:t,candleOn:r,cut:a})}),t>=4&&r&&(0,X.jsxs)($.div,{initial:{opacity:0,scale:.8},animate:{opacity:1,scale:1},className:`\r
-              -mt-8\r
-              sm:-mt-5\r
-            `,children:[(0,X.jsx)(`p`,{className:`\r
-                font-serif\r
-                text-xl\r
-                sm:text-2xl\r
-                text-[#8d3b5d]\r
-              `,children:`Make a wish, Sundari ✨`}),(0,X.jsx)(`button`,{onClick:()=>{i(!1)},className:`\r
-                mt-3\r
-                rounded-full\r
-                bg-[#d9487d]\r
-                text-white\r
-                px-6\r
-                py-3\r
-                font-bold\r
-                shadow-lg\r
-                hover:scale-105\r
-                active:scale-95\r
-                transition\r
-              `,children:`Blow Out Candle 🕯️`})]}),t>=4&&!r&&!a&&(0,X.jsxs)($.div,{initial:{opacity:0,scale:.8},animate:{opacity:1,scale:1},className:`\r
-              -mt-8\r
-              sm:-mt-5\r
-            `,children:[(0,X.jsx)(`p`,{className:`\r
-                font-serif\r
-                text-xl\r
-                sm:text-2xl\r
-                text-[#8d3b5d]\r
-              `,children:`The candle is off! 💕`}),(0,X.jsx)(`button`,{onClick:()=>{o(!0),setTimeout(()=>{e(`/birthday`)},900)},className:`\r
-                mt-3\r
-                rounded-full\r
-                bg-[#d9487d]\r
-                text-white\r
-                px-7\r
-                py-3\r
-                font-bold\r
-                shadow-[0_12px_30px_rgba(217,72,125,.3)]\r
-                hover:scale-105\r
-                active:scale-95\r
-                transition\r
-              `,children:`🔪 Cut The Cake 🍰`})]}),a&&(0,X.jsx)($.p,{initial:{opacity:0,y:10},animate:{opacity:1,y:0},className:`\r
-              -mt-8\r
-              text-[#b9366b]\r
-              font-serif\r
-              text-lg\r
-            `,children:`Yay! Enjoy the party 🎉`})]})]})}function Mp(){let e=k();return(0,X.jsxs)(`main`,{className:`\r
+            `,children:[t&&(0,X.jsxs)(`div`,{className:`real-flame`,children:[(0,X.jsx)(`div`,{className:`flame-outer`}),(0,X.jsx)(`div`,{className:`flame-middle`}),(0,X.jsx)(`div`,{className:`flame-inner`})]}),(0,X.jsx)(`div`,{className:`candle-wick`}),(0,X.jsxs)(`div`,{className:`candle-stick`,children:[(0,X.jsx)(`span`,{}),(0,X.jsx)(`span`,{}),(0,X.jsx)(`span`,{})]})]}),e>=3&&(0,X.jsxs)(`div`,{className:`cake-sprinkles`,children:[(0,X.jsx)(`i`,{}),(0,X.jsx)(`i`,{}),(0,X.jsx)(`i`,{}),(0,X.jsx)(`i`,{}),(0,X.jsx)(`i`,{}),(0,X.jsx)(`i`,{}),(0,X.jsx)(`i`,{}),(0,X.jsx)(`i`,{})]}),n&&(0,X.jsxs)(`div`,{className:`cake-slice`,children:[(0,X.jsx)(`div`,{className:`slice-cream`}),(0,X.jsx)(`div`,{className:`slice-sponge`}),(0,X.jsxs)(`div`,{className:`slice-frosting`,children:[(0,X.jsx)(`span`,{}),(0,X.jsx)(`span`,{}),(0,X.jsx)(`span`,{})]})]}),n&&(0,X.jsxs)(X.Fragment,{children:[(0,X.jsxs)(`div`,{className:`confetti-container confetti-left`,"aria-hidden":!0,children:[(0,X.jsx)(`i`,{}),(0,X.jsx)(`i`,{}),(0,X.jsx)(`i`,{}),(0,X.jsx)(`i`,{}),(0,X.jsx)(`i`,{}),(0,X.jsx)(`i`,{}),(0,X.jsx)(`i`,{}),(0,X.jsx)(`i`,{})]}),(0,X.jsxs)(`div`,{className:`confetti-container confetti-right`,"aria-hidden":!0,children:[(0,X.jsx)(`i`,{}),(0,X.jsx)(`i`,{}),(0,X.jsx)(`i`,{}),(0,X.jsx)(`i`,{}),(0,X.jsx)(`i`,{}),(0,X.jsx)(`i`,{}),(0,X.jsx)(`i`,{}),(0,X.jsx)(`i`,{})]})]})]}),(0,X.jsx)(`div`,{className:`cake-ground-shadow`})]})}var Pp=[{image:`/stickers/bunny-party.gif`,caption:`Celebrate! 💕`},{image:`/stickers/party-cute.gif`,caption:`Party Time! 🎉`},{image:`/stickers/happy-birthday.png`,caption:`Just For You 💖`},{image:`/stickers/birthday-girl.gif`,caption:`Make A Wish ✨`},{image:`/stickers/birthday-cake.gif`,caption:`Sweet Wishes 🎂`},{image:`/stickers/penguin-party.gif`,caption:`Enjoy Your Day! 🐧`}];Array.from({length:55},(e,t)=>({id:t,left:`${t*37%100}%`,delay:`${t*.17%4}s`,duration:`${4+t*13%5}s`,rotate:`${t*29%360}deg`}));function Fp(){return(0,X.jsxs)(`section`,{className:`hanging-area`,"aria-label":`Birthday stickers`,children:[(0,X.jsx)(`div`,{className:`fairy-lights`,children:Array.from({length:15}).map((e,t)=>(0,X.jsx)(`span`,{},t))}),(0,X.jsx)(`div`,{className:`rope`}),(0,X.jsx)(`div`,{className:`marquee-window`,children:(0,X.jsx)(`div`,{className:`marquee-track`,children:[...Pp,...Pp].map((e,t)=>(0,X.jsxs)(`div`,{className:`hanging-wrap`,children:[(0,X.jsx)(`div`,{className:`clothespin`}),(0,X.jsxs)(`article`,{className:`photo-card card-${t%6}`,children:[(0,X.jsx)(`div`,{className:`photo-frame`,children:(0,X.jsx)(`img`,{src:e.image,alt:e.caption})}),(0,X.jsx)(`p`,{children:e.caption})]})]},`${e.caption}-${t}`))})})]})}function Ip(){let e=k(),[t,n]=(0,x.useState)(0),[r,i]=(0,x.useState)(!0),[a,o]=(0,x.useState)(!1);return(0,x.useEffect)(()=>{let e=[setTimeout(()=>n(1),700),setTimeout(()=>n(2),1500),setTimeout(()=>n(3),2300),setTimeout(()=>n(4),3100)];return()=>e.forEach(clearTimeout)},[]),(0,X.jsxs)(`main`,{className:`birthday-page cake-page`,children:[(0,X.jsx)(`div`,{className:`ambient-glow glow-one`}),(0,X.jsx)(`div`,{className:`ambient-glow glow-two`}),(0,X.jsx)(`div`,{className:`cake-bg-sparkles`,"aria-hidden":`true`,children:Array.from({length:18},(e,t)=>(0,X.jsx)(`span`,{style:{"--i":t}},t))}),(0,X.jsx)(Fp,{}),(0,X.jsxs)(`section`,{className:`cake-hero hero-show`,children:[(0,X.jsxs)($.div,{className:`mini-badge`,initial:{opacity:0,y:-18},animate:{opacity:1,y:0},transition:{duration:.7},children:[(0,X.jsx)(Op,{size:15}),`Birthday Surprise · 02`,(0,X.jsx)(Op,{size:15})]}),(0,X.jsx)($.h1,{initial:{opacity:0,scale:.9},animate:{opacity:1,scale:1},transition:{duration:.8,delay:.1},children:`Your Birthday Cake 🎂`}),(0,X.jsxs)(`div`,{className:`heart-line`,"aria-hidden":`true`,children:[(0,X.jsx)(`span`,{}),(0,X.jsx)(Ep,{className:`heart-icon`,fill:`currentColor`,size:32}),(0,X.jsx)(`span`,{})]}),(0,X.jsx)($.div,{className:`special-ribbon`,initial:{opacity:0,y:10},animate:{opacity:1,y:0},transition:{duration:.6,delay:.25},children:`To My Special Girl 💗`}),(0,X.jsxs)($.p,{className:`cake-wish`,initial:{opacity:0},animate:{opacity:1},transition:{duration:.7,delay:.4},children:[`Something sweet is waiting for you... 💕`,(0,X.jsx)(`br`,{}),`Make a wish, blow the candle, and cut your cake! ✨`]}),(0,X.jsxs)(`div`,{className:`cake-section`,children:[(0,X.jsxs)(`div`,{className:`section-label`,children:[(0,X.jsx)(Op,{size:15}),`Birthday Cake`,(0,X.jsx)(Op,{size:15})]}),(0,X.jsx)(`div`,{className:`cake-scene-wrap`,children:(0,X.jsx)(Np,{stage:t,candleOn:r,cut:a})}),t<4&&(0,X.jsxs)(`div`,{className:`cake-loading`,children:[`Preparing something sweet... `,t,`/4 ✨`]}),t>=4&&r&&(0,X.jsxs)($.div,{className:`cake-action`,initial:{opacity:0,y:18,scale:.85},animate:{opacity:1,y:0,scale:1},transition:{duration:.55},children:[(0,X.jsx)(`p`,{children:`Make a wish, Sundari ✨`}),(0,X.jsx)(`button`,{type:`button`,onClick:()=>{i(!1)},className:`cake-button`,children:`🕯️ Blow Out Candle`})]}),t>=4&&!r&&!a&&(0,X.jsxs)($.div,{className:`cake-action`,initial:{opacity:0,y:18,scale:.85},animate:{opacity:1,y:0,scale:1},transition:{duration:.55},children:[(0,X.jsx)(`p`,{children:`The candle is off! 💕`}),(0,X.jsx)(`button`,{type:`button`,onClick:()=>{o(!0),setTimeout(()=>{e(`/birthday`)},1100)},className:`cake-button`,children:`🔪 Cut The Cake 🍰`})]}),a&&(0,X.jsxs)($.div,{className:`cut-message`,initial:{opacity:0,y:12,scale:.9},animate:{opacity:1,y:0,scale:1},children:[(0,X.jsx)(Dp,{size:20}),(0,X.jsx)(`span`,{children:`Yay! Cake is cut — let the celebration begin! 🎉`}),(0,X.jsx)(Op,{size:20})]})]}),(0,X.jsxs)(`div`,{className:`cake-celebration`,children:[(0,X.jsx)(`div`,{className:`cake-cloud cake-cloud-left`}),(0,X.jsx)(`div`,{className:`cake-cloud cake-cloud-right`}),(0,X.jsx)(`div`,{className:`cake-character cake-bunny`,children:(0,X.jsx)(`img`,{src:`/stickers/bunny-party.gif`,alt:`Cute birthday bunny`})}),(0,X.jsxs)(`div`,{className:`cake-gift`,"aria-hidden":`true`,children:[(0,X.jsx)(`div`,{className:`cake-gift-lid`}),(0,X.jsxs)(`div`,{className:`cake-gift-body`,children:[(0,X.jsx)(`span`,{className:`cake-ribbon-v`}),(0,X.jsx)(`span`,{className:`cake-ribbon-h`})]}),(0,X.jsx)(`div`,{className:`cake-bow`,children:`🎀`})]}),(0,X.jsx)(`div`,{className:`cake-character cake-penguin`,children:(0,X.jsx)(`img`,{src:`/stickers/penguin-party.gif`,alt:`Cute birthday penguin`})})]}),(0,X.jsxs)(`div`,{className:`final-card cake-final-card`,children:[(0,X.jsx)(`span`,{children:`🎂`}),(0,X.jsx)(`span`,{children:a?`You deserve all the happiness in the world! 💕`:`A sweet surprise is waiting just for you! 💕`}),(0,X.jsx)(Op,{size:20})]})]}),(0,X.jsx)(`footer`,{children:`Forever cheering for you • Happy Birthday, beautiful 💖`})]})}function Lp(){let e=k();return(0,X.jsxs)(`main`,{className:`\r
         screen-fit\r
         relative\r
         flex\r
@@ -528,7 +417,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             sm:text-base\r
             leading-7\r
             mt-4\r
-          `,children:`May your days be filled with laughter, beautiful memories, endless smiles and all the little happiness your heart deserves. 💕`}),(0,X.jsx)($.div,{initial:{opacity:0,y:20},animate:{opacity:1,y:0},transition:{delay:1.4},className:`mt-6`,children:(0,X.jsx)(Op,{onClick:()=>e(`/letter`),children:`Open Your Wish Letter 💌`})})]})]})}function Np({text:e=``,speed:t=24,onComplete:n}){let[r,i]=(0,x.useState)(``),[a,o]=(0,x.useState)(!1);return(0,x.useEffect)(()=>{let r=0;i(``);let a=setInterval(()=>{r+=1,i(e.slice(0,r)),r>=e.length&&(clearInterval(a),o(!0),n&&n())},t);return()=>clearInterval(a)},[e,t,n]),(0,X.jsxs)(`div`,{className:`text-sm sm:text-base leading-7 whitespace-pre-wrap text-[#704d5c]`,children:[r,(0,X.jsx)(`span`,{className:`typewriter-cursor`,style:{visibility:a?`hidden`:`visible`},children:`|`})]})}var Pp=[{color:`bg-[#ff9fbe]`,emoji:`🌸`,special:!1,message:`May you smile every single day and may your life always be filled with beautiful little moments. 🌷`},{color:`bg-[#c7a1ff]`,emoji:`💜`,special:!1,message:`May beautiful memories find you wherever you go, and may every new year of your life be kinder than the last.`},{color:`bg-[#ffe28a]`,emoji:`💛`,special:!0,message:`You are one of those rare people who can make an ordinary day feel special just by being there. ✨`},{color:`bg-[#9edcff]`,emoji:`💙`,special:!0,message:`May you always receive the love, peace, respect and happiness that your heart deserves. 💖`}];function Fp(){let[e,t]=(0,x.useState)([]),n=k(),r=n=>{e.includes(n)||t([...e,n])};return(0,X.jsxs)(`main`,{className:`\r
+          `,children:`May your days be filled with laughter, beautiful memories, endless smiles and all the little happiness your heart deserves. 💕`}),(0,X.jsx)($.div,{initial:{opacity:0,y:20},animate:{opacity:1,y:0},transition:{delay:1.4},className:`mt-6`,children:(0,X.jsx)(jp,{onClick:()=>e(`/letter`),children:`Open Your Wish Letter 💌`})})]})]})}function Rp({text:e=``,speed:t=24,onComplete:n}){let[r,i]=(0,x.useState)(``),[a,o]=(0,x.useState)(!1);return(0,x.useEffect)(()=>{let r=0;i(``);let a=setInterval(()=>{r+=1,i(e.slice(0,r)),r>=e.length&&(clearInterval(a),o(!0),n&&n())},t);return()=>clearInterval(a)},[e,t,n]),(0,X.jsxs)(`div`,{className:`text-sm sm:text-base leading-7 whitespace-pre-wrap text-[#704d5c]`,children:[r,(0,X.jsx)(`span`,{className:`typewriter-cursor`,style:{visibility:a?`hidden`:`visible`},children:`|`})]})}var zp=[{color:`bg-[#ff9fbe]`,emoji:`🌸`,special:!1,message:`May you smile every single day and may your life always be filled with beautiful little moments. 🌷`},{color:`bg-[#c7a1ff]`,emoji:`💜`,special:!1,message:`May beautiful memories find you wherever you go, and may every new year of your life be kinder than the last.`},{color:`bg-[#ffe28a]`,emoji:`💛`,special:!0,message:`You are one of those rare people who can make an ordinary day feel special just by being there. ✨`},{color:`bg-[#9edcff]`,emoji:`💙`,special:!0,message:`May you always receive the love, peace, respect and happiness that your heart deserves. 💖`}];function Bp(){let[e,t]=(0,x.useState)([]),n=k(),r=n=>{e.includes(n)||t([...e,n])};return(0,X.jsxs)(`main`,{className:`\r
      min-h-screen\r
     w-full\r
     relative\r
@@ -572,7 +461,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           gap-3\r
           sm:gap-6\r
           mt-8\r
-        `,children:Pp.map((t,n)=>{let i=e.includes(n);return(0,X.jsx)($.button,{onClick:()=>r(n),whileHover:{y:-8},whileTap:{scale:1.2},animate:i?{scale:[1,1.3,0],opacity:[1,1,0]}:{y:[0,-5,0]},transition:{duration:i?.45:2,repeat:i?0:1/0,delay:n*.15},className:`
+        `,children:zp.map((t,n)=>{let i=e.includes(n);return(0,X.jsx)($.button,{onClick:()=>r(n),whileHover:{y:-8},whileTap:{scale:1.2},animate:i?{scale:[1,1.3,0],opacity:[1,1,0]}:{y:[0,-5,0]},transition:{duration:i?.45:2,repeat:i?0:1/0,delay:n*.15},className:`
                     w-14
                     h-[74px]
                     sm:w-20
@@ -588,7 +477,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
                   `,children:i?`✨`:t.emoji},n)})}),(0,X.jsx)(`div`,{className:`\r
           min-h-[150px]\r
           mt-7\r
-        `,children:(0,X.jsx)(hd,{children:e.map(e=>{let t=Pp[e];return(0,X.jsxs)($.div,{initial:{opacity:0,y:15,scale:.9},animate:{opacity:1,y:0,scale:1},className:`
+        `,children:(0,X.jsx)(hd,{children:e.map(e=>{let t=zp[e];return(0,X.jsxs)($.div,{initial:{opacity:0,y:15,scale:.9},animate:{opacity:1,y:0,scale:1},className:`
                       max-w-xl
                       mx-auto
                       mb-3
@@ -615,7 +504,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           text-xs\r
           text-[#a06b7f]\r
           mt-6\r
-        `,children:e.length===4?`All four wishes unlocked. 💖`:`Tap all four balloons to unlock every wish.`})]})]})}function Ip(){let e=k(),[t,n]=(0,x.useState)(!1),[r,i]=(0,x.useState)(!1),[a,o]=(0,x.useState)(!1),s=(0,x.useRef)(null);return(0,X.jsx)(`main`,{className:`min-h-screen w-full grid place-items-center bg-gradient-to-br from-[#fff5f9] via-[#ffe0eb] to-[#ffc5d9] p-6`,children:(0,X.jsxs)(`section`,{className:`w-[min(720px,94vw)] mx-auto text-center envelope-page`,children:[(0,X.jsxs)(`div`,{children:[(0,X.jsxs)(`div`,{className:`envelope-wrap ${r?`open`:``}`,onClick:()=>{r||(i(!0),setTimeout(()=>{o(!0),setTimeout(()=>n(!0),180)},700))},children:[(0,X.jsx)(`div`,{className:`letter-paper`}),(0,X.jsx)(`div`,{className:`envelope-body`}),(0,X.jsx)(`div`,{className:`heart-seal`,children:`💌`}),(0,X.jsx)(`div`,{className:`envelope-flap`})]}),(0,X.jsx)(`div`,{id:`tapHint`,children:`tap the envelope to open it`}),(0,X.jsxs)(`div`,{id:`letterTextWrap`,className:a?`show`:``,children:[(0,X.jsx)(`div`,{id:`letterText`,children:t&&(0,X.jsx)(Np,{text:`Dear Sundari, 💗
+        `,children:e.length===4?`All four wishes unlocked. 💖`:`Tap all four balloons to unlock every wish.`})]})]})}function Vp(){let e=k(),[t,n]=(0,x.useState)(!1),[r,i]=(0,x.useState)(!1),[a,o]=(0,x.useState)(!1),s=(0,x.useRef)(null);return(0,X.jsx)(`main`,{className:`min-h-screen w-full grid place-items-center bg-gradient-to-br from-[#fff5f9] via-[#ffe0eb] to-[#ffc5d9] p-6`,children:(0,X.jsxs)(`section`,{className:`w-[min(720px,94vw)] mx-auto text-center envelope-page`,children:[(0,X.jsxs)(`div`,{children:[(0,X.jsxs)(`div`,{className:`envelope-wrap ${r?`open`:``}`,onClick:()=>{r||(i(!0),setTimeout(()=>{o(!0),setTimeout(()=>n(!0),180)},700))},children:[(0,X.jsx)(`div`,{className:`letter-paper`}),(0,X.jsx)(`div`,{className:`envelope-body`}),(0,X.jsx)(`div`,{className:`heart-seal`,children:`💌`}),(0,X.jsx)(`div`,{className:`envelope-flap`})]}),(0,X.jsx)(`div`,{id:`tapHint`,children:`tap the envelope to open it`}),(0,X.jsxs)(`div`,{id:`letterTextWrap`,className:a?`show`:``,children:[(0,X.jsx)(`div`,{id:`letterText`,children:t&&(0,X.jsx)(Rp,{text:`Dear Sundari, 💗
 
 You are the cutest, sweetest person. Just seeing you makes me forget all the tiredness of the day, and somehow, seeing you brings a kind of peace to my eyes and my heart. You are such a beautiful lady in my world. ❤️
 I truly want you to go very far in life, achieve everything you dream of, and always stay happy. May this new year of your life be filled with love, happiness, laughter, and so many beautiful, sweet moments. 🌸
@@ -626,7 +515,7 @@ Just stay the way you are. Keep smiling, keep shining, and keep being the beauti
 You deserve all the beautiful things life has to offer. ❤️
 
 With all my love,
-Your special friend ❤️`,speed:18,onComplete:()=>{s.current&&s.current.classList.add(`show`)}})}),(0,X.jsx)(`div`,{id:`signoff`,ref:s,children:`Happy Birthday, Sundari 💗`})]})]}),(0,X.jsx)(`div`,{className:`mt-6 flex justify-center gap-3`,children:(0,X.jsx)(`button`,{onClick:()=>e(`/`),className:`rounded-full bg-white border px-4 py-2 text-[#9e4a6b]`,children:`Back`})})]})})}function Lp(){let e=({children:e})=>{let t=!1;try{t=localStorage.getItem(`unlocked`)===`true`}catch{t=!1}return t?e:(0,X.jsx)(zt,{to:`/`,replace:!0})};return(0,X.jsxs)(Ht,{children:[(0,X.jsx)(Bt,{path:`/`,element:(0,X.jsx)(lp,{})}),(0,X.jsx)(Bt,{path:`/welcome`,element:(0,X.jsx)(e,{children:(0,X.jsx)(sp,{})})}),(0,X.jsx)(Bt,{path:`/teddy`,element:(0,X.jsx)(e,{children:(0,X.jsx)(kp,{})})}),(0,X.jsx)(Bt,{path:`/cake`,element:(0,X.jsx)(e,{children:(0,X.jsx)(jp,{})})}),(0,X.jsx)(Bt,{path:`/birthday`,element:(0,X.jsx)(e,{children:(0,X.jsx)(Mp,{})})}),(0,X.jsx)(Bt,{path:`/letter`,element:(0,X.jsx)(e,{children:(0,X.jsx)(Fp,{})})}),(0,X.jsx)(Bt,{path:`/final`,element:(0,X.jsx)(e,{children:(0,X.jsx)(Ip,{})})})]})}function Rp(){let e=(0,x.useRef)(null),[t,n]=(0,x.useState)(!1);return(0,x.useEffect)(()=>{e.current&&(e.current.loop=!0,e.current.volume=.45)},[]),(0,X.jsxs)(X.Fragment,{children:[(0,X.jsx)(`audio`,{ref:e,src:`/birthday-music.mp3`,preload:`auto`}),(0,X.jsx)(`button`,{onClick:async()=>{let r=e.current;if(r)try{t?(r.pause(),n(!1)):(await r.play(),n(!0))}catch(e){console.log(`Music cannot start:`,e)}},"aria-label":t?`Mute music`:`Play music`,className:`\r
+Your special friend ❤️`,speed:18,onComplete:()=>{s.current&&s.current.classList.add(`show`)}})}),(0,X.jsx)(`div`,{id:`signoff`,ref:s,children:`Happy Birthday, Sundari 💗`})]})]}),(0,X.jsx)(`div`,{className:`mt-6 flex justify-center gap-3`,children:(0,X.jsx)(`button`,{onClick:()=>e(`/`),className:`rounded-full bg-white border px-4 py-2 text-[#9e4a6b]`,children:`Back`})})]})})}function Hp(){let e=({children:e})=>{let t=!1;try{t=localStorage.getItem(`unlocked`)===`true`}catch{t=!1}return t?e:(0,X.jsx)(zt,{to:`/`,replace:!0})};return(0,X.jsxs)(Ht,{children:[(0,X.jsx)(Bt,{path:`/`,element:(0,X.jsx)(lp,{})}),(0,X.jsx)(Bt,{path:`/welcome`,element:(0,X.jsx)(e,{children:(0,X.jsx)(sp,{})})}),(0,X.jsx)(Bt,{path:`/teddy`,element:(0,X.jsx)(e,{children:(0,X.jsx)(Mp,{})})}),(0,X.jsx)(Bt,{path:`/cake`,element:(0,X.jsx)(e,{children:(0,X.jsx)(Ip,{})})}),(0,X.jsx)(Bt,{path:`/birthday`,element:(0,X.jsx)(e,{children:(0,X.jsx)(Lp,{})})}),(0,X.jsx)(Bt,{path:`/letter`,element:(0,X.jsx)(e,{children:(0,X.jsx)(Bp,{})})}),(0,X.jsx)(Bt,{path:`/final`,element:(0,X.jsx)(e,{children:(0,X.jsx)(Vp,{})})})]})}function Up(){let e=(0,x.useRef)(null),[t,n]=(0,x.useState)(!1);return(0,x.useEffect)(()=>{e.current&&(e.current.loop=!0,e.current.volume=.45)},[]),(0,X.jsxs)(X.Fragment,{children:[(0,X.jsx)(`audio`,{ref:e,src:`/birthday-music.mp3`,preload:`auto`}),(0,X.jsx)(`button`,{onClick:async()=>{let r=e.current;if(r)try{t?(r.pause(),n(!1)):(await r.play(),n(!0))}catch(e){console.log(`Music cannot start:`,e)}},"aria-label":t?`Mute music`:`Play music`,className:`\r
           fixed\r
           top-4\r
           right-4\r
@@ -645,7 +534,7 @@ Your special friend ❤️`,speed:18,onComplete:()=>{s.current&&s.current.classL
           shadow-[0_10px_30px_rgba(150,50,90,.18)]\r
           hover:scale-105\r
           transition\r
-        `,children:t?(0,X.jsx)(Ep,{size:18}):(0,X.jsx)(Dp,{size:18})})]})}function zp(){return(0,X.jsxs)($.div,{initial:{y:-100,opacity:0},animate:{y:0,opacity:1},className:`\r
+        `,children:t?(0,X.jsx)(kp,{size:18}):(0,X.jsx)(Ap,{size:18})})]})}function Wp(){return(0,X.jsxs)($.div,{initial:{y:-100,opacity:0},animate:{y:0,opacity:1},className:`\r
         fixed\r
         top-0\r
         left-0\r
@@ -685,7 +574,7 @@ Your special friend ❤️`,speed:18,onComplete:()=>{s.current&&s.current.classL
           sm:right-10\r
           text-2xl\r
           sm:text-3xl\r
-        `,children:`🎈`})]})}function Bp(){return(0,X.jsxs)(X.Fragment,{children:[(0,X.jsx)($.div,{initial:{opacity:0,x:-80,scale:.8},animate:{opacity:1,x:0,scale:1},transition:{duration:.8,type:`spring`,stiffness:100},className:`\r
+        `,children:`🎈`})]})}function Gp(){return(0,X.jsxs)(X.Fragment,{children:[(0,X.jsx)($.div,{initial:{opacity:0,x:-80,scale:.8},animate:{opacity:1,x:0,scale:1},transition:{duration:.8,type:`spring`,stiffness:100},className:`\r
           fixed\r
           left-0\r
           bottom-1\r
@@ -745,4 +634,4 @@ Your special friend ❤️`,speed:18,onComplete:()=>{s.current&&s.current.classL
           pointer-events-none\r
           text-xl\r
           sm:text-2xl\r
-        `,animate:{y:[0,-25,-45],x:[0,-8,-18],opacity:[0,1,0]},transition:{duration:2.2,repeat:1/0,delay:.6,ease:`easeOut`},children:`🎶`})]})}function Vp(){return(0,X.jsxs)(`div`,{"aria-hidden":`true`,className:`pointer-events-none fixed inset-0 z-[1] overflow-hidden select-none`,children:[(0,X.jsx)($.div,{initial:{opacity:0,scale:.9},animate:{opacity:.12,scale:1},transition:{duration:1.5,ease:`easeOut`},className:`absolute inset-0 grid place-items-center`,children:(0,X.jsx)(`span`,{className:`font-serif text-[min(62vw,560px)] sm:text-[min(58vw,720px)] font-black leading-none text-[#d9487d]`,children:`21`})}),(0,X.jsx)($.span,{animate:{y:[0,-18,0],rotate:[-4,4,-4]},transition:{duration:5,repeat:1/0,ease:`easeInOut`},className:`absolute left-[8%] top-[20%] text-5xl sm:text-7xl font-serif font-bold text-[#d9487d]/20`,children:`21`}),(0,X.jsx)($.span,{animate:{y:[0,20,0],rotate:[4,-4,4]},transition:{duration:6,repeat:1/0,ease:`easeInOut`},className:`absolute right-[8%] bottom-[18%] text-6xl sm:text-8xl font-serif font-bold text-[#d9487d]/20`,children:`21`})]})}function Hp(){return(0,X.jsxs)(Dn,{children:[(0,X.jsx)(Rp,{}),(0,X.jsx)(Vp,{}),(0,X.jsx)(zp,{}),(0,X.jsx)(Bp,{}),(0,X.jsx)(Lp,{})]})}op.createRoot(document.getElementById(`root`)).render((0,X.jsx)(x.StrictMode,{children:(0,X.jsx)(Hp,{})}));
+        `,animate:{y:[0,-25,-45],x:[0,-8,-18],opacity:[0,1,0]},transition:{duration:2.2,repeat:1/0,delay:.6,ease:`easeOut`},children:`🎶`})]})}function Kp(){return(0,X.jsxs)(`div`,{"aria-hidden":`true`,className:`pointer-events-none fixed inset-0 z-[1] overflow-hidden select-none`,children:[(0,X.jsx)($.div,{initial:{opacity:0,scale:.9},animate:{opacity:.12,scale:1},transition:{duration:1.5,ease:`easeOut`},className:`absolute inset-0 grid place-items-center`,children:(0,X.jsx)(`span`,{className:`font-serif text-[min(62vw,560px)] sm:text-[min(58vw,720px)] font-black leading-none text-[#d9487d]`,children:`21`})}),(0,X.jsx)($.span,{animate:{y:[0,-18,0],rotate:[-4,4,-4]},transition:{duration:5,repeat:1/0,ease:`easeInOut`},className:`absolute left-[8%] top-[20%] text-5xl sm:text-7xl font-serif font-bold text-[#d9487d]/20`,children:`21`}),(0,X.jsx)($.span,{animate:{y:[0,20,0],rotate:[4,-4,4]},transition:{duration:6,repeat:1/0,ease:`easeInOut`},className:`absolute right-[8%] bottom-[18%] text-6xl sm:text-8xl font-serif font-bold text-[#d9487d]/20`,children:`21`})]})}function qp(){return(0,X.jsxs)(Dn,{children:[(0,X.jsx)(Up,{}),(0,X.jsx)(Kp,{}),(0,X.jsx)(Wp,{}),(0,X.jsx)(Gp,{}),(0,X.jsx)(Hp,{})]})}op.createRoot(document.getElementById(`root`)).render((0,X.jsx)(x.StrictMode,{children:(0,X.jsx)(qp,{})}));

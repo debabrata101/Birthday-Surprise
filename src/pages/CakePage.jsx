@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
-
 import { useNavigate } from "react-router-dom";
-
 import { motion } from "framer-motion";
-
+import { Heart, Sparkles, PartyPopper } from "lucide-react";
 import Cake from "../components/Cake";
+import { HangingCards } from "../components/Wish/Wish";
+import "../components/Wish/Wish.css";
 
 function CakePage() {
   const navigate = useNavigate();
@@ -13,7 +13,6 @@ function CakePage() {
   const [candleOn, setCandleOn] = useState(true);
   const [cut, setCut] = useState(false);
 
-  // Cake layers one by one fall from top
   useEffect(() => {
     const timers = [
       setTimeout(() => setStage(1), 700),
@@ -22,262 +21,188 @@ function CakePage() {
       setTimeout(() => setStage(4), 3100),
     ];
 
-    return () => {
-      timers.forEach(clearTimeout);
-    };
+    return () => timers.forEach(clearTimeout);
   }, []);
 
-  // Candle off
   const blowCandle = () => {
     setCandleOn(false);
   };
 
-  // Cut cake and directly go to party page
   const cutCake = () => {
     setCut(true);
 
-    // Give slice animation a little time
     setTimeout(() => {
       navigate("/birthday");
-    }, 900);
+    }, 1100);
   };
 
   return (
-    <main
-      className="
-        screen-fit
-        relative
-        flex
-        items-center
-        justify-center
-        overflow-hidden
-          pt-14
-          sm:pt-16
-        bg-gradient-to-br
-        from-[#fff5f9]
-        via-[#ffe0eb]
-        to-[#ffc0d7]
-      "
-    >
-      {/* Soft background lights */}
+    <main className="birthday-page cake-page">
+      <div className="ambient-glow glow-one" />
+      <div className="ambient-glow glow-two" />
 
-      <motion.div
-        animate={{
-          scale: [1, 1.15, 1],
-          opacity: [0.2, 0.4, 0.2],
-        }}
-        transition={{
-          duration: 4,
-          repeat: Infinity,
-        }}
-        className="
-          absolute
-          w-[min(400px,90vw)]
-          aspect-square
-          rounded-full
-          bg-pink-300/30
-          blur-3xl
-        "
-      />
+      <div className="cake-bg-sparkles" aria-hidden="true">
+        {Array.from({ length: 18 }, (_, i) => (
+          <span key={i} style={{ "--i": i }} />
+        ))}
+      </div>
 
-      <section
-        className="
-          relative
-          z-20
-          w-full
-          w-[min(850px,92vw)]
-          max-h-full
-          px-4
-          py-3
-          text-center
-          flex
-          flex-col
-          items-center
-          justify-center
-        "
-      >
-        {/* HEADER */}
+      <HangingCards />
 
+      <section className="cake-hero hero-show">
         <motion.div
-          initial={{
-            opacity: 0,
-            y: -20,
-          }}
-          animate={{
-            opacity: 1,
-            y: 0,
-          }}
+          className="mini-badge"
+          initial={{ opacity: 0, y: -18 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
         >
-          <p
-            className="
-              uppercase
-              tracking-[.25em]
-              text-[9px]
-              sm:text-xs
-              font-bold
-              text-[#b65376]
-            "
-          >
-            Birthday Surprise · 02
-          </p>
-
-          <h1
-            className="
-              font-serif
-              text-3xl
-              sm:text-5xl
-              md:text-6xl
-              font-bold
-              text-[#70263f]
-              mt-1
-            "
-          >
-            Your Birthday Cake 🎂
-          </h1>
-
-          <p
-            className="
-              text-[#81586a]
-              text-xs
-              sm:text-base
-              mt-2
-            "
-          >
-            Something sweet is waiting for you...
-          </p>
+          <Sparkles size={15} />
+          Birthday Surprise · 02
+          <Sparkles size={15} />
         </motion.div>
 
-        {/* CAKE */}
-
-        <div
-          className="
-            mt-2
-            scale-[.72]
-            sm:scale-[.82]
-            md:scale-[.9]
-            lg:scale-100
-            -my-12
-            sm:-my-10
-          "
+        <motion.h1
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, delay: 0.1 }}
         >
-          <Cake stage={stage} candleOn={candleOn} cut={cut} />
+          Your Birthday Cake 🎂
+        </motion.h1>
+
+        <div className="heart-line" aria-hidden="true">
+          <span />
+          <Heart className="heart-icon" fill="currentColor" size={32} />
+          <span />
         </div>
 
-        {/* CANDLE BUTTON */}
+        <motion.div
+          className="special-ribbon"
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.25 }}
+        >
+          To My Special Girl 💗
+        </motion.div>
 
-        {stage >= 4 && candleOn && (
-          <motion.div
-            initial={{
-              opacity: 0,
-              scale: 0.8,
-            }}
-            animate={{
-              opacity: 1,
-              scale: 1,
-            }}
-            className="
-              -mt-8
-              sm:-mt-5
-            "
-          >
-            <p
-              className="
-                font-serif
-                text-xl
-                sm:text-2xl
-                text-[#8d3b5d]
-              "
+        <motion.p
+          className="cake-wish"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.7, delay: 0.4 }}
+        >
+          Something sweet is waiting for you... 💕
+          <br />
+          Make a wish, blow the candle, and cut your cake! ✨
+        </motion.p>
+
+        <div className="cake-section">
+          <div className="section-label">
+            <Sparkles size={15} />
+            Birthday Cake
+            <Sparkles size={15} />
+          </div>
+
+          <div className="cake-scene-wrap">
+            <Cake stage={stage} candleOn={candleOn} cut={cut} />
+          </div>
+
+          {stage < 4 && (
+            <div className="cake-loading">
+              Preparing something sweet... {stage}/4 ✨
+            </div>
+          )}
+
+          {stage >= 4 && candleOn && (
+            <motion.div
+              className="cake-action"
+              initial={{ opacity: 0, y: 18, scale: 0.85 }}
+              animate={{ opacity: 1, y: 0, scale: 1 }}
+              transition={{ duration: 0.55 }}
             >
-              Make a wish, Sundari ✨
-            </p>
+              <p>Make a wish, Sundari ✨</p>
+              <button
+                type="button"
+                onClick={blowCandle}
+                className="cake-button"
+              >
+                🕯️ Blow Out Candle
+              </button>
+            </motion.div>
+          )}
 
-            <button
-              onClick={blowCandle}
-              className="
-                mt-3
-                rounded-full
-                bg-[#d9487d]
-                text-white
-                px-6
-                py-3
-                font-bold
-                shadow-lg
-                hover:scale-105
-                active:scale-95
-                transition
-              "
+          {stage >= 4 && !candleOn && !cut && (
+            <motion.div
+              className="cake-action"
+              initial={{ opacity: 0, y: 18, scale: 0.85 }}
+              animate={{ opacity: 1, y: 0, scale: 1 }}
+              transition={{ duration: 0.55 }}
             >
-              Blow Out Candle 🕯️
-            </button>
-          </motion.div>
-        )}
+              <p>The candle is off! 💕</p>
+              <button
+                type="button"
+                onClick={cutCake}
+                className="cake-button"
+              >
+                🔪 Cut The Cake 🍰
+              </button>
+            </motion.div>
+          )}
 
-        {/* CUT BUTTON */}
-
-        {stage >= 4 && !candleOn && !cut && (
-          <motion.div
-            initial={{
-              opacity: 0,
-              scale: 0.8,
-            }}
-            animate={{
-              opacity: 1,
-              scale: 1,
-            }}
-            className="
-              -mt-8
-              sm:-mt-5
-            "
-          >
-            <p
-              className="
-                font-serif
-                text-xl
-                sm:text-2xl
-                text-[#8d3b5d]
-              "
+          {cut && (
+            <motion.div
+              className="cut-message"
+              initial={{ opacity: 0, y: 12, scale: 0.9 }}
+              animate={{ opacity: 1, y: 0, scale: 1 }}
             >
-              The candle is off! 💕
-            </p>
+              <PartyPopper size={20} />
+              <span>Yay! Cake is cut — let the celebration begin! 🎉</span>
+              <Sparkles size={20} />
+            </motion.div>
+          )}
+        </div>
 
-            <button
-              onClick={cutCake}
-              className="
-                mt-3
-                rounded-full
-                bg-[#d9487d]
-                text-white
-                px-7
-                py-3
-                font-bold
-                shadow-[0_12px_30px_rgba(217,72,125,.3)]
-                hover:scale-105
-                active:scale-95
-                transition
-              "
-            >
-              🔪 Cut The Cake 🍰
-            </button>
-          </motion.div>
-        )}
+        <div className="cake-celebration">
+          <div className="cake-cloud cake-cloud-left" />
+          <div className="cake-cloud cake-cloud-right" />
 
-        {/* AFTER CLICK */}
+          <div className="cake-character cake-bunny">
+            <img
+              src="/stickers/bunny-party.gif"
+              alt="Cute birthday bunny"
+            />
+          </div>
 
-        {cut && (
-          <motion.p
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="
-              -mt-8
-              text-[#b9366b]
-              font-serif
-              text-lg
-            "
-          >
-            Yay! Enjoy the party 🎉
-          </motion.p>
-        )}
+          <div className="cake-gift" aria-hidden="true">
+            <div className="cake-gift-lid" />
+            <div className="cake-gift-body">
+              <span className="cake-ribbon-v" />
+              <span className="cake-ribbon-h" />
+            </div>
+            <div className="cake-bow">🎀</div>
+          </div>
+
+          <div className="cake-character cake-penguin">
+            <img
+              src="/stickers/penguin-party.gif"
+              alt="Cute birthday penguin"
+            />
+          </div>
+        </div>
+
+        <div className="final-card cake-final-card">
+          <span>🎂</span>
+          <span>
+            {cut
+              ? "You deserve all the happiness in the world! 💕"
+              : "A sweet surprise is waiting just for you! 💕"}
+          </span>
+          <Sparkles size={20} />
+        </div>
       </section>
+
+      <footer>
+        Forever cheering for you • Happy Birthday, beautiful 💖
+      </footer>
     </main>
   );
 }

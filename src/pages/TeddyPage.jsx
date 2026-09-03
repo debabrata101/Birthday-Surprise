@@ -4,33 +4,68 @@ import Balloons from "../Components/Balloons";
 import PhotoFrame from "../Components/PhotoFrame";
 import AltaTree from "../Components/AltaTree";
 import NextButton from "../Components/NextButton";
+import "./TeddyPage.css";
 
 function TeddyPage() {
   const navigate = useNavigate();
 
+  const hangingPhotos = [
+    "/images/her1.jpeg",
+    "/images/her2.jpeg",
+    "/images/her3.jpeg",
+    "/images/her4.jpeg",
+    "/images/her5.jpeg",
+    "/images/her6.jpeg",
+    "/images/her7.jpeg",
+    "/images/her8.jpeg",
+  ];
+
   return (
     <main
       className="
+        teddy-page
         screen-fit
         relative
         overflow-hidden
-        bg-gradient-to-br
+        bg-linear-to-br
         from-[#fff5f9]
         via-[#ffe1ec]
         to-[#ffc4d9]
-          pt-15
       "
     >
       <Balloons amount={8} />
 
+      {/* ================= HANGING PHOTO CARDS ================= */}
+      <div className="teddy-hanging-area" aria-label="Birthday memories">
+        {hangingPhotos.map((photo, index) => (
+          <div
+            key={index}
+            className={`teddy-hanging-card teddy-card-${index + 1}`}
+          >
+            <div className="teddy-string">
+              <span className="teddy-light" />
+            </div>
+
+            <div className="teddy-photo-card">
+              <img
+                src={photo}
+                alt={`Her photo ${index + 1}`}
+                className="teddy-card-image"
+              />
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {/* ================= MAIN CONTENT ================= */}
       <section
         className="
           relative
           z-10
           h-full
           w-full
-          w-[min(1200px,94vw)]
-            mx-auto
+          max-w-300
+          mx-auto
           flex
           flex-col
           items-center
@@ -38,16 +73,11 @@ function TeddyPage() {
           px-4
           sm:px-6
           pb-5
+          pt-14
         "
       >
         {/* TITLE */}
-
-        <div
-          className="
-          text-center
-          shrink-0
-        "
-        >
+        <div className="text-center shrink-0">
           <p
             className="
               uppercase
@@ -76,7 +106,6 @@ function TeddyPage() {
         </div>
 
         {/* PHOTO + TREE */}
-
         <div
           className="
             w-full
@@ -92,11 +121,10 @@ function TeddyPage() {
           "
         >
           {/* PHOTO */}
-
           <div
             className="
               w-[44%]
-              max-w-[430px]
+              max-w-107.5
               min-w-0
             "
           >
@@ -104,11 +132,10 @@ function TeddyPage() {
           </div>
 
           {/* TREE */}
-
           <div
             className="
               w-[44%]
-              max-w-[430px]
+              max-w-107.5
               min-w-0
             "
           >
@@ -117,13 +144,7 @@ function TeddyPage() {
         </div>
 
         {/* BUTTON */}
-
-        <div
-          className="
-            shrink-0
-            mt-2
-          "
-        >
+        <div className="shrink-0 mt-2">
           <NextButton onClick={() => navigate("/cake")}>
             Next Surprise: The Cake
           </NextButton>
