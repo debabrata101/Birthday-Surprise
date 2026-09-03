@@ -316,7 +316,8 @@
   .teddy-hanging-card {
     width: 75px;
     top: 30px;
-    animation: none;
+    animation: teddyTravel 90s linear infinite;
+    animation-delay: -45s;
   }
 
   .teddy-string {
@@ -387,6 +388,8 @@
   .teddy-hanging-card {
     width: 62px;
     top: 22px;
+    animation: teddyTravel 90s linear infinite;
+    animation-delay: -45s;
   }
 
   .teddy-string {
@@ -418,7 +421,7 @@
 
   .teddy-card-3 {
     left: 50%;
-    transform: translateX(-50%);
+    transform: none;
   }
 
   .teddy-card-4 {
