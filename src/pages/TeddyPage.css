@@ -39,7 +39,7 @@
   flex-direction: column;
   align-items: center;
   transform-origin: top center;
-  animation: teddyTravel 48s linear infinite;
+  animation: teddyTravel 5s linear infinite;
 }
 
 /* Different positions */
@@ -299,6 +299,9 @@
 @media (max-width: 640px) {
   .teddy-page {
     min-height: 100svh;
+    height: auto;
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
   }
 
   .teddy-hanging-area {
@@ -363,7 +366,11 @@
   }
 
   .teddy-page > section {
+    height: auto;
+    min-height: 100svh;
+    justify-content: flex-start;
     padding-top: 9rem;
+    padding-bottom: 2rem;
   }
 }
 
