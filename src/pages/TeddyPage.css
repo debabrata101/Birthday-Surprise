@@ -39,7 +39,7 @@
   flex-direction: column;
   align-items: center;
   transform-origin: top center;
-  animation: teddyTravel 5s linear infinite;
+  animation: teddyTravel 30s linear infinite;
 }
 
 /* Different positions */
@@ -82,6 +82,11 @@
 .teddy-card-8 {
   left: 92%;
   animation-delay: -42s;
+}
+
+.teddy-hanging-card {
+  animation-duration: 90s;
+  animation-delay: 0s;
 }
 
 /* =========================================================
